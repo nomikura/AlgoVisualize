@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Algorithm</title>
+   <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+   <!-- アルゴリズム選択 -->
+   <select id="selectAlgo">
+      <option value="DFS">DSF</option>
+      <option value="BFS">BFS</option>
+   </select>
+   <!-- アルゴリズムを決定する関数と入力を読み込む関数 -->
+   <input type="button" value="execute" onclick="selectAlgorithm();getValue('board');">
+
+   <!-- 入力フォーム -->
+   <form name="frm1">
+      <textarea name="Tarea" id="board" cols="31" rows="14"></textarea>
+   </form>
+
+   <!-- テーブルの埋め込み -->
+   <div id="table"></div>
+   <!-- テーブルを操作するボタンたち -->
+   <div id="buttons"></div>
+      <input type="button" value="go" onclick="act('go')">
+      <input type="button" value="gogo(+10)" onclick="act('gogo')">
+      <input type="button" value="back" onclick="act('back')">
+      <input type="button" value="backback(-10)" onclick="act('backback')">
+   <!-- ステップ数 -->
+   <dir id="step">step: 0</dir>
+</body>
+</html>
