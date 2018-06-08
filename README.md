@@ -19,6 +19,7 @@
 .*.
 ```
 ### 3. Press the execute button.
+- Generate a map.
 
 ### 4. Press the buttons below the table.
 - go: Proceed 1 step.
